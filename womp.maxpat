@@ -10,9 +10,21 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 313.0, 100.0, 948.0, 750.0 ],
+		"rect" : [ 34.0, 87.0, 948.0, 750.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"linecount" : 11,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 24.0, 837.0, 424.0, 154.0 ],
+					"text" : "NEXT TO DO\n- Implement randomness\n- Use samples to try to replicate certain instruments/sounds/whatever and save values as presets (parameter tuning)\n- FULLY AUTOMATE (toggle based on time, ideally continuous but negotiable based  on time constraints)\n- RECORD\n- 10:30pm cutoff to record\n\nReach goals \n- amplitude enveloping"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-58",
 					"maxclass" : "newobj",
@@ -402,13 +414,11 @@
 				"box" : 				{
 					"fontface" : 0,
 					"id" : "obj-89",
-					"linecount" : 6,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 793.0, 824.0, 150.0, 97.0 ],
-					"text" : "/exponential_amp_curve : 2.96654,\n/odd_scalar : 3.98947,\n/even_scalar : 1.73647"
+					"patching_rect" : [ 793.0, 824.0, 150.0, 33.0 ]
 				}
 
 			}
@@ -509,8 +519,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 214.0, 514.0, 150.0, 33.0 ],
-					"text" : "/freq : 0."
+					"patching_rect" : [ 214.0, 514.0, 150.0, 33.0 ]
 				}
 
 			}
@@ -1299,7 +1308,7 @@
 
 			}
  ],
-		"originid" : "pat-52",
+		"originid" : "pat-110",
 		"dependency_cache" : [ 			{
 				"name" : "cnmat.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/CNMAT-MMJ-Depot-master/patchers/music_and_computing_(Gottfried)/internal",
