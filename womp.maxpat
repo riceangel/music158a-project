@@ -4,15 +4,74 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 5,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 134.0, 134.0, 1852.0, 969.0 ],
+		"rect" : [ 34.0, 87.0, 1372.0, 779.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 622.0, 131.0, 41.0, 22.0 ],
+					"text" : "sig~ 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 811.0, 21.0, 262.0, 22.0 ],
+					"text" : "loadmess ./music158a-project/project_samples/"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 135.0, 11.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 689.0, 69.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 242.0, 76.0, 150.0, 20.0 ],
+					"text" : "Taking in vocal input"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-62",
 					"maxclass" : "message",
@@ -20,7 +79,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 659.5, 394.0, 340.0, 22.0 ],
-					"text" : "19 12186.775431 0.006531 0.003792 0.005317"
+					"text" : "19 12699.710603 0.000186 -0.000118 0.000143"
 				}
 
 			}
@@ -82,7 +141,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 538.0, 573.0, 83.0, 20.0 ],
+					"patching_rect" : [ 538.0, 573.0, 83.0, 19.0 ],
 					"text" : "envelope"
 				}
 
@@ -100,7 +159,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 538.0, 542.0, 72.0, 22.0 ],
+					"patching_rect" : [ 538.0, 542.0, 72.0, 21.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"tricolor" : [ 0.75, 0.75, 0.75, 1.0 ],
 					"triscale" : 0.9
@@ -120,7 +179,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 445.0, 542.0, 72.0, 22.0 ],
+					"patching_rect" : [ 445.0, 542.0, 72.0, 21.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"tricolor" : [ 0.75, 0.75, 0.75, 1.0 ],
 					"triscale" : 0.9
@@ -136,7 +195,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "float", "float", "float", "list" ],
-					"patching_rect" : [ 445.0, 514.0, 238.0, 22.0 ],
+					"patching_rect" : [ 445.0, 514.0, 238.0, 21.0 ],
 					"text" : "sigmund~ @hop 5000 pitch env notes peaks"
 				}
 
@@ -149,7 +208,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 442.0, 573.0, 79.0, 20.0 ],
+					"patching_rect" : [ 442.0, 573.0, 79.0, 19.0 ],
 					"text" : "pitch"
 				}
 
@@ -595,7 +654,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 24.0, 837.0, 424.0, 158.0 ],
+					"patching_rect" : [ 24.0, 837.0, 424.0, 154.0 ],
 					"text" : "NEXT TO DO\n- Implement randomness\n- Use samples to try to replicate certain instruments/sounds/whatever and save values as presets (parameter tuning)\n- FULLY AUTOMATE (toggle based on time, ideally continuous but negotiable based  on time constraints)\n- RECORD\n- 10:30pm cutoff to record\n\nReach goals \n- amplitude enveloping"
 				}
 
@@ -751,8 +810,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 793.0, 824.0, 150.0, 72.0 ],
-					"text" : "/exponential_amp_curve : 0.510052,\n/odd_scalar : 11.6084,\n/even_scalar : 10.8392"
+					"patching_rect" : [ 793.0, 824.0, 163.0, 72.0 ],
+					"text" : "/exponential_amp_curve : 2.,\n/odd_scalar : 2.,\n/even_scalar : 2."
 				}
 
 			}
@@ -903,7 +962,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 689.0, 122.0, 24.0, 24.0 ]
+					"patching_rect" : [ 689.0, 122.0, 24.0, 24.0 ],
+					"svg" : ""
 				}
 
 			}
@@ -914,20 +974,28 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 811.0, 139.0, 80.0, 22.0 ],
-					"text" : "prepend read"
+					"patching_rect" : [ 811.0, 139.0, 110.0, 22.0 ],
+					"text" : "prepend readfolder"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"embed_buffers" : 					{
+						"womp.1" : "Dog of Wisdom.mp3"
+					}
+,
 					"id" : "obj-29",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 811.0, 182.0, 81.0, 22.0 ],
-					"text" : "buffer~ womp"
+					"outlettype" : [ "", "bang" ],
+					"patching_rect" : [ 811.0, 182.0, 166.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 1
+					}
+,
+					"text" : "polybuffer~ womp @embed 1"
 				}
 
 			}
@@ -938,7 +1006,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 811.0, 69.0, 106.0, 42.0 ]
+					"patching_rect" : [ 841.0, 65.0, 106.0, 42.0 ]
 				}
 
 			}
@@ -946,11 +1014,11 @@
 				"box" : 				{
 					"id" : "obj-24",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 3,
 					"numoutlets" : 2,
-					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 689.0, 168.0, 73.0, 22.0 ],
-					"text" : "play~ womp"
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 689.0, 168.0, 98.0, 22.0 ],
+					"text" : "groove~ womp.1"
 				}
 
 			}
@@ -961,7 +1029,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 24.0, 626.0, 424.0, 186.0 ],
+					"patching_rect" : [ 24.0, 626.0, 424.0, 181.0 ],
 					"text" : "Tuah diff timbre manipulations COMBINE IDK FOR MORE SOUND RANGE\n1.) additive/subtractive synthesis --> tldr add or remove frequencies somehow to ORIG sounds) [Look at March 31]\n2.) throw in like a poly~ or sumn like that and manipulate harmonicity, etc. from there (taking freq input and generating NEW sounds from that)\n\nFINAL GOAL \nInputs  - Mic input, some folder of audio samples (potentially, if we can't change input itself enough)\nOutputs - Modify audio input to sound like diff things (e.g.  Hatsune miku, Robot (saw??), echo??,  bart announcement, glados from portal, anonymous, underwater, pitch flux\n"
 				}
 
@@ -1090,7 +1158,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 135.0, 52.0, 24.0, 24.0 ]
+					"patching_rect" : [ 135.0, 52.0, 24.0, 24.0 ],
+					"svg" : ""
 				}
 
 			}
@@ -1532,7 +1601,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
-					"midpoints" : [ 820.5, 114.0, 820.5, 114.0 ],
+					"midpoints" : [ 850.5, 114.0, 820.5, 114.0 ],
 					"source" : [ "obj-26", 0 ]
 				}
 
@@ -1542,6 +1611,13 @@
 					"destination" : [ "obj-29", 0 ],
 					"midpoints" : [ 820.5, 162.0, 820.5, 162.0 ],
 					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-31", 0 ]
 				}
 
 			}
@@ -1570,6 +1646,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-83", 2 ],
 					"order" : 0,
 					"source" : [ "obj-38", 0 ]
@@ -1582,6 +1672,13 @@
 					"midpoints" : [ 1361.5, 699.0, 810.5, 699.0 ],
 					"order" : 1,
 					"source" : [ "obj-38", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"source" : [ "obj-39", 0 ]
 				}
 
 			}
@@ -1789,89 +1886,89 @@
 
 			}
  ],
-		"originid" : "pat-6",
+		"originid" : "pat-830",
 		"dependency_cache" : [ 			{
 				"name" : "cnmat.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/CNMAT-MMJ-Depot-master/patchers/music_and_computing_(Gottfried)/internal",
-				"patcherrelativepath" : "../../../../../Documents/Max 9/Packages/CNMAT-MMJ-Depot-master/patchers/music_and_computing_(Gottfried)/internal",
+				"patcherrelativepath" : "../../../Max 9/Packages/CNMAT-MMJ-Depot-master/patchers/music_and_computing_(Gottfried)/internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cnmat.o.harmonics.shape~.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/CNMAT-MMJ-Depot-master/patchers/synthesis/additive-synth",
-				"patcherrelativepath" : "../../../../../Documents/Max 9/Packages/CNMAT-MMJ-Depot-master/patchers/synthesis/additive-synth",
+				"patcherrelativepath" : "../../../Max 9/Packages/CNMAT-MMJ-Depot-master/patchers/synthesis/additive-synth",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "gen.harmonics.shape.gendsp",
 				"bootpath" : "~/Documents/Max 9/Packages/CNMAT-MMJ-Depot-master/code",
-				"patcherrelativepath" : "../../../../../Documents/Max 9/Packages/CNMAT-MMJ-Depot-master/code",
+				"patcherrelativepath" : "../../../Max 9/Packages/CNMAT-MMJ-Depot-master/code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.compose.mxe64",
-				"type" : "mx64"
+				"name" : "o.compose.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.cond.mxe64",
-				"type" : "mx64"
+				"name" : "o.cond.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.display.mxe64",
-				"type" : "mx64"
+				"name" : "o.display.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "o.doc.handler.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/CNMAT-MMJ-Depot-master/patchers/music_and_computing_(Gottfried)/internal",
-				"patcherrelativepath" : "../../../../../Documents/Max 9/Packages/CNMAT-MMJ-Depot-master/patchers/music_and_computing_(Gottfried)/internal",
+				"patcherrelativepath" : "../../../Max 9/Packages/CNMAT-MMJ-Depot-master/patchers/music_and_computing_(Gottfried)/internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.expr.codebox.mxe64",
-				"type" : "mx64"
+				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "o.input.switch~.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/CNMAT-MMJ-Depot-master/patchers/music_and_computing_(Gottfried)/internal",
-				"patcherrelativepath" : "../../../../../Documents/Max 9/Packages/CNMAT-MMJ-Depot-master/patchers/music_and_computing_(Gottfried)/internal",
+				"patcherrelativepath" : "../../../Max 9/Packages/CNMAT-MMJ-Depot-master/patchers/music_and_computing_(Gottfried)/internal",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.intersection.mxe64",
-				"type" : "mx64"
+				"name" : "o.intersection.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.pack.mxe64",
-				"type" : "mx64"
+				"name" : "o.pack.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.prepend.mxe64",
-				"type" : "mx64"
+				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.route.mxe64",
-				"type" : "mx64"
+				"name" : "o.route.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.select.mxe64",
-				"type" : "mx64"
+				"name" : "o.select.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.union.mxe64",
-				"type" : "mx64"
+				"name" : "o.union.mxo",
+				"type" : "iLaX"
 			}
 , 			{
-				"name" : "sigmund~.mxe64",
-				"type" : "mx64"
+				"name" : "sigmund~.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "waveSwitch.maxpat",
-				"bootpath" : "~/Desktop/Music/Music158A/FinalProject/music158a-project",
+				"bootpath" : "~/Documents/GitHub/music158a/music158a-project",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
