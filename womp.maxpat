@@ -14,6 +14,41 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-74",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 506.862776517868042, 603.921606063842773, 32.0, 22.0 ],
+					"text" : "mtof"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-73",
+					"maxclass" : "spectroscope~",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 461.999992499999962, 315.0, 171.0, 64.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-72",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 495.0, 254.0, 40.0, 22.0 ],
+					"text" : "*~ 3.5"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-41",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -158,7 +193,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 498.499992499999962, 890.0, 116.0, 22.0 ],
-					"text" : "rampsmooth~ 40 40"
+					"text" : "rampsmooth~ 30 30"
 				}
 
 			}
@@ -227,7 +262,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 664.0, 1007.0, 161.0, 45.0 ]
+					"patching_rect" : [ 670.5, 1007.0, 161.0, 45.0 ]
 				}
 
 			}
@@ -248,7 +283,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 208.0, 907.0, 231.0, 75.0 ]
+					"patching_rect" : [ 365.5, 412.0, 231.0, 75.0 ]
 				}
 
 			}
@@ -259,7 +294,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 622.0, 41.0, 41.0, 22.0 ],
+					"patching_rect" : [ 625.352936983108521, 4.901961088180542, 41.0, 22.0 ],
 					"text" : "loop 1"
 				}
 
@@ -271,7 +306,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 622.0, 131.0, 41.0, 22.0 ],
+					"patching_rect" : [ 625.352936983108521, 94.117652893066406, 41.0, 22.0 ],
 					"text" : "sig~ 1"
 				}
 
@@ -307,7 +342,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 689.0, 69.0, 58.0, 22.0 ],
+					"patching_rect" : [ 693.0, 32.352943181991577, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -331,7 +366,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 659.5, 394.0, 340.0, 22.0 ],
-					"text" : "19 2715.930801 0.000074 0.000073 -0.000012"
+					"text" : "19 4442.316871 0.042321 -0.032773 -0.026777"
 				}
 
 			}
@@ -937,7 +972,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 793.0, 824.0, 163.0, 72.0 ],
-					"text" : "/exponential_amp_curve : 8.63952,\n/odd_scalar : 5.94972,\n/even_scalar : 1.57255"
+					"text" : "/exponential_amp_curve : 2.5993,\n/odd_scalar : 2.0965,\n/even_scalar : 1.8"
 				}
 
 			}
@@ -1039,7 +1074,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 214.0, 514.0, 150.0, 33.0 ],
-					"text" : "/freq : 0."
+					"text" : "/freq : 443.03"
 				}
 
 			}
@@ -1065,7 +1100,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 472.499992499999962, 693.0, 150.0, 44.0 ],
-					"text" : "/num_harmonics = 15,\n/sig_type = 4"
+					"text" : "/num_harmonics = 80,\n/sig_type = 4"
 				}
 
 			}
@@ -1088,7 +1123,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 689.0, 122.0, 24.0, 24.0 ],
+					"patching_rect" : [ 693.0, 85.294122934341431, 24.0, 24.0 ],
 					"svg" : ""
 				}
 
@@ -1108,7 +1143,15 @@
 , 			{
 				"box" : 				{
 					"embed_buffers" : 					{
-						"womp.1" : "Dog of Wisdom.mp3"
+						"womp.1" : "Anamanaguchi - Miku (Official Acapella).mp3",
+						"womp.2" : "APT. - Otamatone Cover.mp3",
+						"womp.3" : "Bad Apple (ft. Sekai) ONLY VOCALS (accapella).mp3",
+						"womp.4" : "Careless Whisper - Otamatone Cover.mp3",
+						"womp.5" : "Dog of Wisdom.mp3",
+						"womp.6" : "Hatsune Miku World Is Mine Acapella Vocals Only.mp3",
+						"womp.7" : "Koko no Trumpet (Ketsui no Kokoro Ver.).mp3",
+						"womp.8" : "Ozzy Osbourne - Crazy Train Solo Cover.mp3",
+						"womp.9" : "Tim Henson Signature Guitar TOD10N  Playing God Playthrough  Ibanez.mp3"
 					}
 ,
 					"id" : "obj-29",
@@ -1143,8 +1186,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 689.0, 168.0, 98.0, 22.0 ],
-					"text" : "groove~ womp.1"
+					"patching_rect" : [ 686.5, 127.450988292694092, 98.0, 22.0 ],
+					"text" : "groove~ womp.8"
 				}
 
 			}
@@ -1433,7 +1476,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"midpoints" : [ 698.5, 147.0, 698.5, 147.0 ],
+					"midpoints" : [ 702.5, 110.372557163238525, 696.0, 110.372557163238525 ],
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -1584,6 +1627,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-74", 0 ],
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-23", 1 ]
 				}
@@ -1613,7 +1663,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 698.5, 210.0, 546.0, 210.0, 546.0, 300.0, 185.5, 300.0 ],
 					"order" : 3,
 					"source" : [ "obj-24", 0 ]
 				}
@@ -1621,16 +1670,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
-					"order" : 2,
-					"source" : [ "obj-24", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
-					"midpoints" : [ 698.5, 192.0, 698.5, 192.0 ],
+					"midpoints" : [ 696.0, 192.0, 698.5, 192.0 ],
 					"order" : 0,
 					"source" : [ "obj-24", 0 ]
 				}
@@ -1640,6 +1681,15 @@
 				"patchline" : 				{
 					"destination" : [ "obj-48", 0 ],
 					"order" : 1,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-72", 0 ],
+					"midpoints" : [ 696.0, 210.0, 504.5, 210.0 ],
+					"order" : 2,
 					"source" : [ "obj-24", 0 ]
 				}
 
@@ -1679,14 +1729,6 @@
 					"destination" : [ "obj-33", 0 ],
 					"midpoints" : [ 481.999992499999962, 733.0, 481.999992499999962, 733.0 ],
 					"source" : [ "obj-32", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-44", 0 ],
-					"order" : 2,
-					"source" : [ "obj-33", 0 ]
 				}
 
 			}
@@ -1919,17 +1961,40 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-54", 0 ],
-					"midpoints" : [ 236.0, 438.0, 236.0, 438.0 ],
-					"source" : [ "obj-69", 0 ]
+					"destination" : [ "obj-68", 0 ],
+					"midpoints" : [ 1429.5, 464.0, 1429.5, 464.0 ],
+					"source" : [ "obj-70", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-68", 0 ],
-					"midpoints" : [ 1429.5, 464.0, 1429.5, 464.0 ],
-					"source" : [ "obj-70", 0 ]
+					"destination" : [ "obj-23", 0 ],
+					"order" : 1,
+					"source" : [ "obj-72", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-73", 0 ],
+					"order" : 0,
+					"source" : [ "obj-72", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-54", 0 ],
+					"source" : [ "obj-74", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 0 ],
+					"order" : 2,
+					"source" : [ "obj-77", 0 ]
 				}
 
 			}
@@ -2047,7 +2112,7 @@
 
 			}
  ],
-		"originid" : "pat-1102",
+		"originid" : "pat-1194",
 		"dependency_cache" : [ 			{
 				"name" : "cnmat.loadbang.maxpat",
 				"bootpath" : "~/Documents/Max 9/Packages/CNMAT-MMJ-Depot-master/patchers/music_and_computing_(Gottfried)/internal",
