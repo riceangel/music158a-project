@@ -10,9 +10,20 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 673.0, 87.0, 733.0, 779.0 ],
+		"rect" : [ 47.0, 115.0, 1156.0, 723.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 564.0, 188.0, 150.0, 20.0 ],
+					"text" : "Basic wave types"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-51",
 					"maxclass" : "button",
@@ -52,11 +63,13 @@
 				"box" : 				{
 					"fontface" : 0,
 					"id" : "obj-24",
+					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 379.0, 445.0, 286.0, 33.0 ]
+					"patching_rect" : [ 379.0, 445.0, 236.0, 59.0 ],
+					"text" : "/exponential_amp_curve : 7.93143,\n/odd_scalar : 7.58276,\n/even_scalar : 2.51601"
 				}
 
 			}
@@ -64,7 +77,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-49",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -76,11 +89,13 @@
 				"box" : 				{
 					"fontface" : 0,
 					"id" : "obj-48",
+					"linecount" : 5,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 174.0, 496.0, 150.0, 33.0 ]
+					"patching_rect" : [ 174.0, 496.0, 236.0, 85.0 ],
+					"text" : "/freq : 151.663,\n/sig_type : 4,\n/exponential_amp_curve : 7.93143,\n/odd_scalar : 7.58276,\n/even_scalar : 2.51601"
 				}
 
 			}
@@ -108,7 +123,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 69.0, 844.0, 56.0, 22.0 ],
-					"sig" : 440.0
+					"sig" : 151.663391976248334
 				}
 
 			}
@@ -237,11 +252,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-16",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 55.0, 112.0, 30.0, 30.0 ]
 				}
 
@@ -250,11 +265,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-15",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 1053.0, 231.0, 30.0, 30.0 ]
 				}
 
@@ -271,7 +286,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 695.0, 848.0, 56.0, 22.0 ],
-					"sig" : 1.0
+					"sig" : 2.516008137694848
 				}
 
 			}
@@ -287,7 +302,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 537.0, 848.0, 56.0, 22.0 ],
-					"sig" : 1.0
+					"sig" : 7.582761921383685
 				}
 
 			}
@@ -303,7 +318,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 338.0, 846.0, 56.0, 22.0 ],
-					"sig" : 1.0
+					"sig" : 7.931425813231696
 				}
 
 			}
@@ -319,7 +334,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 169.0, 846.0, 56.0, 22.0 ],
-					"sig" : 10.0
+					"sig" : 40.0
 				}
 
 			}
@@ -641,84 +656,7 @@
 
 			}
  ],
-		"originid" : "pat-289",
-		"dependency_cache" : [ 			{
-				"name" : "cnmat.loadbang.maxpat",
-				"bootpath" : "~/Documents/Max 9/Packages/CNMAT-MMJ-Depot-master/patchers/music_and_computing_(Gottfried)/internal",
-				"patcherrelativepath" : "../../../Max 9/Packages/CNMAT-MMJ-Depot-master/patchers/music_and_computing_(Gottfried)/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "cnmat.o.harmonics.shape~.maxpat",
-				"bootpath" : "~/Documents/Max 9/Packages/CNMAT-MMJ-Depot-master/patchers/synthesis/additive-synth",
-				"patcherrelativepath" : "../../../Max 9/Packages/CNMAT-MMJ-Depot-master/patchers/synthesis/additive-synth",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "gen.harmonics.shape.gendsp",
-				"bootpath" : "~/Documents/Max 9/Packages/CNMAT-MMJ-Depot-master/code",
-				"patcherrelativepath" : "../../../Max 9/Packages/CNMAT-MMJ-Depot-master/code",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.compose.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.cond.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.display.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.doc.handler.maxpat",
-				"bootpath" : "~/Documents/Max 9/Packages/CNMAT-MMJ-Depot-master/patchers/music_and_computing_(Gottfried)/internal",
-				"patcherrelativepath" : "../../../Max 9/Packages/CNMAT-MMJ-Depot-master/patchers/music_and_computing_(Gottfried)/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.input.switch~.maxpat",
-				"bootpath" : "~/Documents/Max 9/Packages/CNMAT-MMJ-Depot-master/patchers/music_and_computing_(Gottfried)/internal",
-				"patcherrelativepath" : "../../../Max 9/Packages/CNMAT-MMJ-Depot-master/patchers/music_and_computing_(Gottfried)/internal",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.intersection.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.prepend.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.route.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.select.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+		"originid" : "pat-56"
 	}
 
 }
